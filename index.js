@@ -28,9 +28,9 @@ read.question("Enter Text for logo (Up to 3 characters): ", (text) =>{
                     } else{
                         console.log(`SVG File (${text}.svg has been generated`)
                     }
-                    read.close()
+                    read.close();
                 })
-            })
-        })
-    })
-})
+            });
+        });
+    });
+});
