@@ -20,6 +20,16 @@ read.question("Enter Text for logo (Up to 3 characters): ", (text) =>{
 
                 //function to generate logo
                 const svg = generateSvg(text,textColor,shape,shapeColor)
+
+                //save SVG to file
+                saveSvg(svg, text+'.svg', (err) => {
+                    if(err){
+                        console.error(`failed to genertae SVG File: ${err}`)
+                    } else{
+                        console.log(`SVG File (${text}.svg has been generated`)
+                    }
+                    read.close()
+                })
             })
         })
     })
