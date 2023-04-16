@@ -1,4 +1,5 @@
 const readline = require('readline')
+const {generateSvg,saveSvg} = require('./lib/shapes')
 
 const read = readline.createInterface({
     input:process.stdin,
@@ -9,15 +10,16 @@ const read = readline.createInterface({
 read.question("Enter Text for logo (Up to 3 characters): ", (text) =>{
 
     // prompt usesr to enter text color for logo
-    read.question("Enter text color (text or hexadecimal): ", (textcolor) =>{
+    read.question("Enter text color (text or hexadecimal): ", (textColor) =>{
 
         // prompt user to select shape for logo
         read.question("Choose shape for logo (Circle, Square Or Triangle): " , (shape) =>{
 
             // prompt user to choose logo color
-            read.question("Enter shape color (text or hexadecimal):",(shape) => {
+            read.question("Enter shape color (text or hexadecimal):",(shapeColor) => {
 
                 //function to generate logo
+                const svg = generateSvg(text,textColor,shape,shapeColor)
             })
         })
     })
