@@ -27,6 +27,3 @@ https://drive.google.com/file/d/1xcBlaIXv3e1oCdIl8OMxBRc6BFnf-hZE/view
 ![screenshot4](images/shot4.png)
 ![screenshot5](images/shot5.png)
 ![screenshot6](images/shot6.png)
-![screenshot7](images/shot7.png)
-![screenshot8](images/shot8.png)
-![screenshot9](images/shot9.png)
